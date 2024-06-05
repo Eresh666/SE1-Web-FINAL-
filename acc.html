@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./acc.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Axiforma:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="acc">
+      <div class="top-bar4">
+        <b class="title53" id="titleText">CAREERNET</b>
+        <div class="navigation3">
+          <div class="tab9" id="tabText">Job Offers</div>
+          <div class="tab9" id="tabText1">Community</div>
+          <div class="tab9" id="tabText2">Events</div>
+          <div class="textfield8">
+            <div class="text35">Search in site</div>
+            <img class="ic-search-icon3" alt="" src="./public/icsearch.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="section9">
+        <div class="container13">
+          <b class="title54">Personal Information</b>
+          <div class="input5">
+            <div class="title55">University</div>
+            <div class="textfield9">
+              <div class="text36">Add University Info</div>
+            </div>
+          </div>
+          <div class="input5">
+            <div class="title55">Address</div>
+            <div class="textfield9">
+              <div class="text36">Add Current Address</div>
+            </div>
+          </div>
+          <div class="button6">
+            <div class="primary6">
+              <div class="title57">Update Info</div>
+            </div>
+          </div>
+        </div>
+        <img class="section-child6" alt="" src="./public/vector-2002.svg" />
+      </div>
+      <div class="section10">
+        <div class="container13">
+          <b class="title58">Account Settings</b>
+          <div class="input7">
+            <div class="textfield11">
+              <div class="text36">
+                <p class="create-new-password">Create New Password</p>
+              </div>
+            </div>
+          </div>
+          <div class="input7">
+            <div class="textfield11">
+              <div class="text36">
+                <p class="create-new-password">Confirm New Password</p>
+              </div>
+            </div>
+          </div>
+          <div class="button6">
+            <div class="primary6">
+              <div class="title57">Save Changes</div>
+            </div>
+          </div>
+        </div>
+        <img class="section-child6" alt="" src="./public/vector-2002.svg" />
+      </div>
+      <div class="foot-bar4">
+        <div class="container15">
+          <div class="title60">© 2024 CAREERNET</div>
+          <div class="title61">Terms & Condition</div>
+          <div class="title62">Privacy & Policy</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var titleText = document.getElementById("titleText");
+      if (titleText) {
+        titleText.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      }
+      
+      var tabText = document.getElementById("tabText");
+      if (tabText) {
+        tabText.addEventListener("click", function (e) {
+          window.location.href = "./job-find.html";
+        });
+      }
+      
+      var tabText1 = document.getElementById("tabText1");
+      if (tabText1) {
+        tabText1.addEventListener("click", function (e) {
+          window.location.href = "./community.html";
+        });
+      }
+      
+      var tabText2 = document.getElementById("tabText2");
+      if (tabText2) {
+        tabText2.addEventListener("click", function (e) {
+          window.location.href = "./event-find.html";
+        });
+      }
+      </script>
+  </body>
+</html>

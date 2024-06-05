@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./job-find.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Axiforma:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="job-find">
+      <div class="sidebar1">
+        <div class="item5">
+          <div class="frame2">
+            <div class="icon2">🔍</div>
+          </div>
+          <div class="title24">Find Job Offers</div>
+        </div>
+        <div class="item6" id="itemContainer1">
+          <div class="frame2">
+            <div class="icon2">📝</div>
+          </div>
+          <div class="title24">Post Job Offers</div>
+        </div>
+      </div>
+      <div class="section6">
+        <div class="container8">
+          <b class="title26">Find Job Offers</b>
+          <div class="selection">
+            <div class="title27">Occupation</div>
+            <div class="chip-group1">
+              <div class="chip12">
+                <div class="text15">Software Engineer</div>
+              </div>
+              <div class="chip12">
+                <div class="text15">Marketing Specialist</div>
+              </div>
+              <div class="chip12">
+                <div class="text15">Data Analyst</div>
+              </div>
+              <div class="chip12">
+                <div class="text15">+</div>
+              </div>
+            </div>
+          </div>
+          <div class="selection">
+            <div class="title27">Place</div>
+            <div class="chip-group1">
+              <div class="chip12">
+                <div class="text15">All</div>
+              </div>
+              <div class="chip12">
+                <div class="text15">+</div>
+              </div>
+            </div>
+          </div>
+          <div class="selection">
+            <div class="title27">University Field</div>
+            <div class="chip-group1">
+              <div class="chip12">
+                <div class="text15">Computer Science</div>
+              </div>
+              <div class="chip12">
+                <div class="text15">Engineering</div>
+              </div>
+              <div class="chip12">
+                <div class="text15">+</div>
+              </div>
+            </div>
+          </div>
+          <div class="selection">
+            <div class="title27">Work System</div>
+            <div class="chip-group1">
+              <div class="chip12">
+                <div class="text15">WFH</div>
+              </div>
+              <div class="chip22">
+                <div class="text15">WFO</div>
+              </div>
+              <div class="chip22">
+                <div class="text15">Hybrid</div>
+              </div>
+            </div>
+          </div>
+          <div class="button4">
+            <div class="primary4">
+              <div class="title31">Search</div>
+            </div>
+          </div>
+        </div>
+        <img class="section-child3" alt="" src="./public/vector-200.svg" />
+      </div>
+      <div class="section7">
+        <div class="container8">
+          <b class="title32">Available Job Offers</b>
+          <div class="list3">
+            <div class="item7" id="itemContainer">
+              <img class="frame-icon3" alt="" src="./public/shopee.png" />
+
+              <div class="title-parent1">
+                <div class="title33">Data Analyst</div>
+                <div class="subtitle44">Shopee Indonesia</div>
+              </div>
+              <div class="subtitle45">Hybrid</div>
+            </div>
+            <div class="item8">
+              <img class="frame-icon3" alt="" src="./public/tiktok.png" />
+
+              <div class="title-parent1">
+                <div class="title33">UI/UX Designer</div>
+                <div class="subtitle44">TikTok Indonesia</div>
+              </div>
+              <div class="subtitle45">WFH</div>
+            </div>
+            <div class="item8">
+              <img class="frame-icon3" alt="" src="./public/sinarmas.png" />
+
+              <div class="title-parent1">
+                <div class="title33">Software Engineer</div>
+                <div class="subtitle44">Sinarmas Group</div>
+              </div>
+              <div class="subtitle45">WFO</div>
+            </div>
+          </div>
+        </div>
+        <img class="section-child3" alt="" src="./public/vector-200.svg" />
+      </div>
+      <div class="foot-bar2">
+        <div class="container10">
+          <div class="title36">© 2024 CAREERNET</div>
+          <div class="title37">Terms & Condition</div>
+          <div class="title38">Privacy & Policy</div>
+        </div>
+      </div>
+      <div class="top-bar2">
+        <b class="title39" id="titleText">CAREERNET</b>
+        <div class="navigation2">
+          <div class="tab6" id="tabText">Job Offers</div>
+          <div class="tab6" id="tabText1">Community</div>
+          <div class="tab6" id="tabText2">Events</div>
+          <div class="textfield2">
+            <div class="text27">Search in site</div>
+            <img class="ic-search-icon2" alt="" src="./public/icsearch.svg" />
+          </div>
+        </div>
+        <img
+          class="basic-user2"
+          alt=""
+          src="./public/24--basic--user1@2x.png"
+          id="basicUser"
+        />
+      </div>
+    </div>
+
+    <script>
+      var itemContainer1 = document.getElementById("itemContainer1");
+      if (itemContainer1) {
+        itemContainer1.addEventListener("click", function (e) {
+          window.location.href = "./job-post.html";
+        });
+      }
+      
+      var itemContainer = document.getElementById("itemContainer");
+      if (itemContainer) {
+        itemContainer.addEventListener("click", function (e) {
+          window.location.href = "./shopee.html";
+        });
+      }
+      
+      var titleText = document.getElementById("titleText");
+      if (titleText) {
+        titleText.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      }
+      
+      var tabText = document.getElementById("tabText");
+      if (tabText) {
+        tabText.addEventListener("click", function (e) {
+          window.location.href = "./job-find.html";
+        });
+      }
+      
+      var tabText1 = document.getElementById("tabText1");
+      if (tabText1) {
+        tabText1.addEventListener("click", function (e) {
+          window.location.href = "./community.html";
+        });
+      }
+      
+      var tabText2 = document.getElementById("tabText2");
+      if (tabText2) {
+        tabText2.addEventListener("click", function (e) {
+          window.location.href = "./event-find.html";
+        });
+      }
+      
+      var basicUser = document.getElementById("basicUser");
+      if (basicUser) {
+        basicUser.addEventListener("click", function (e) {
+          window.location.href = "./acc.html";
+        });
+      }
+      </script>
+  </body>
+</html>

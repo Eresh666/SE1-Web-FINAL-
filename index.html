@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Axiforma:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="homepage-logged">
+      <div class="top-bar1">
+        <b class="title11" id="titleText">CAREERNET</b>
+        <div class="navigation1">
+          <div class="tab3" id="tabText">Job Offers</div>
+          <div class="tab3" id="tabText1">Community</div>
+          <div class="tab3" id="tabText2">Events</div>
+          <div class="textfield1">
+            <div class="text13">Search in site</div>
+            <img class="ic-search-icon1" alt="" src="./public/icsearch.svg" />
+          </div>
+        </div>
+        <img
+          class="basic-user1"
+          alt=""
+          src="./public/24--basic--user1@2x.png"
+          id="basicUser"
+        />
+      </div>
+      <div class="section2">
+        <div class="container3">
+          <b class="title12">Chat with our AI?</b>
+          <div class="button1" id="buttonContainer">
+            <div class="primary1">
+              <div class="title13">Start Chatting</div>
+            </div>
+          </div>
+        </div>
+        <img class="section-inner" alt="" src="./public/vector-200.svg" />
+      </div>
+      <div class="section3">
+        <div class="container3">
+          <b class="title12">Looking to Make Your Own Resume?</b>
+          <div class="button1" id="buttonContainer">
+            <div class="primary1">
+              <div class="title13">Start Creating</div>
+            </div>
+          </div>
+        </div>
+        <img class="section-inner" alt="" src="./public/vector-200.svg" />
+      </div>
+      <div class="section4">
+        <div class="container5">
+          <b class="title16">Community Highlights</b>
+          <div class="list1">
+            <div class="item4" id="itemContainer">
+              <img class="frame-icon2" alt="" src="./public/frame@2x.png" />
+
+              <div class="title-container">
+                <div class="title17">Wilson Smith</div>
+                <div class="subtitle41">Engineering Graduate</div>
+              </div>
+              <div class="subtitle42">BINUS University</div>
+              <img class="item-child" alt="" src="./public/vector-2001.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="image-container">
+          <img
+            class="image-icon"
+            alt=""
+            src="./public/binus-kotak.png"
+            id="image"
+          />
+        </div>
+        <img class="section-child1" alt="" src="./public/vector-200.svg" />
+      </div>
+      <div class="section5">
+        <div class="container5">
+          <b class="title16">Featured Offer</b>
+          <div class="button3">
+            <div class="primary3" id="primaryContainer">
+              <div class="title13">View All Jobs</div>
+            </div>
+          </div>
+        </div>
+        <div class="list2">
+          <div class="card" id="cardContainer">
+            <div class="image-container1">
+              <div class="image">
+                <div class="tag">
+                  <div class="text14">Full-Time</div>
+                </div>
+                <img src ="./public/image@3x.png" id="shopee-image">
+              </div>
+            </div>
+            <div class="text-content">
+              <div class="title20">Data Analyst</div>
+              <div class="subtitle43">Shopee Indonesia</div>
+              <div class="icon-buttons">
+                <img
+                  class="maps-pin-round"
+                  alt=""
+                  src="./public/24--maps--pinround@2x.png"
+                />
+
+                <div class="jakarta-barat-dki">Jakarta Barat, DKI Jakarta</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="section-child1" alt="" src="./public/vector-200.svg" />
+      </div>
+      <div class="foot-bar1">
+        <div class="container7">
+          <div class="title21">© 2024 CAREERNET</div>
+          <div class="title22">Terms & Condition</div>
+          <div class="title23">Privacy & Policy</div>
+        </div>
+        <img class="foot-bar-child" alt="" src="./public/vector-2002.svg" />
+      </div>
+    </div>
+
+    <script>
+      var titleText = document.getElementById("titleText");
+      if (titleText) {
+        titleText.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      }
+      
+      var tabText = document.getElementById("tabText");
+      if (tabText) {
+        tabText.addEventListener("click", function (e) {
+          window.location.href = "./job-find.html";
+        });
+      }
+      
+      var tabText1 = document.getElementById("tabText1");
+      if (tabText1) {
+        tabText1.addEventListener("click", function (e) {
+          window.location.href = "./community.html";
+        });
+      }
+      
+      var tabText2 = document.getElementById("tabText2");
+      if (tabText2) {
+        tabText2.addEventListener("click", function (e) {
+          window.location.href = "./event-find.html";
+        });
+      }
+      
+      var basicUser = document.getElementById("basicUser");
+      if (basicUser) {
+        basicUser.addEventListener("click", function (e) {
+          window.location.href = "./acc.html";
+        });
+      }
+      
+      var buttonContainer = document.getElementById("buttonContainer");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+          window.location.href = "./resume.html";
+        });
+      }
+      
+      var buttonContainer = document.getElementById("buttonContainer");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+          window.location.href = "./chat.html";
+        });
+      }
+      
+      var itemContainer = document.getElementById("itemContainer");
+      if (itemContainer) {
+        itemContainer.addEventListener("click", function (e) {
+          window.location.href = "./b-i-n-u-s.html";
+        });
+      }
+      
+      var image = document.getElementById("image");
+      if (image) {
+        image.addEventListener("click", function (e) {
+          window.location.href = "./b-i-n-u-s.html";
+        });
+      }
+      
+      var primaryContainer = document.getElementById("primaryContainer");
+      if (primaryContainer) {
+        primaryContainer.addEventListener("click", function (e) {
+          window.location.href = "./job-find.html";
+        });
+      }
+      
+      var cardContainer = document.getElementById("cardContainer");
+      if (cardContainer) {
+        cardContainer.addEventListener("click", function (e) {
+          window.location.href = "./shopee.html";
+        });
+      }
+      </script>
+  </body>
+</html>

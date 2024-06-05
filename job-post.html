@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./job-post.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Axiforma:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="job-post">
+      <div class="top-bar7">
+        <b class="title96" id="titleText">CAREERNET</b>
+        <div class="navigation6">
+          <div class="tab18" id="tabText">Job Offers</div>
+          <div class="tab18" id="tabText1">Community</div>
+          <div class="tab18" id="tabText2">Events</div>
+          <div class="textfield24">
+            <div class="text51">Search in site</div>
+            <img class="ic-search-icon6" alt="" src="./public/icsearch.svg" />
+          </div>
+        </div>
+        <img
+          class="basic-user5"
+          alt=""
+          src="./public/24--basic--user1@2x.png"
+          id="basicUser"
+        />
+      </div>
+      <div class="section18">
+        <div class="container28">
+          <b class="title97">Requirements</b>
+        </div>
+        <div class="list6">
+          <div class="row3">
+            <div class="article3">
+              <div class="title-parent7">
+                <div class="title98">Education</div>
+                <div class="subtitle53">Add Education Requirement</div>
+              </div>
+            </div>
+          </div>
+          <div class="row3">
+            <div class="article3">
+              <div class="title-parent7">
+                <div class="title98">Experience</div>
+                <div class="subtitle53">Add Job Experience Requirement</div>
+              </div>
+            </div>
+          </div>
+          <div class="row3">
+            <div class="article3">
+              <div class="title-parent7">
+                <div class="title98">Skills</div>
+                <div class="subtitle53">Add Skills Requirement</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="section-child14" alt="" src="./public/vector-200.svg" />
+
+        <div class="button10">
+          <div class="primary10">
+            <div class="title101">Submit</div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar2">
+        <div class="item10" id="itemContainer">
+          <div class="frame4">
+            <div class="icon4">🔍</div>
+          </div>
+          <div class="title102">Find Job Offers</div>
+        </div>
+        <div class="item11">
+          <div class="frame4">
+            <div class="icon4">📝</div>
+          </div>
+          <div class="title102">Post Job Offers</div>
+        </div>
+      </div>
+      <div class="section19">
+        <div class="container29">
+          <b class="title104">Post a Job Offer</b>
+          <div class="input18">
+            <div class="textfield25">
+              <div class="text52">Job Description</div>
+            </div>
+          </div>
+          <div class="input18">
+            <div class="textfield25">
+              <div class="text52">Company Name</div>
+            </div>
+          </div>
+          <div class="input18">
+            <div class="textfield25">
+              <div class="text52">Company Address</div>
+            </div>
+          </div>
+          <div class="selection7">
+            <div class="title105">Work System</div>
+            <div class="chip-group6">
+              <div class="chip27">
+                <div class="text55">WFH</div>
+              </div>
+              <div class="chip28">
+                <div class="text55">WFO</div>
+              </div>
+              <div class="chip28">
+                <div class="text55">Hybrid</div>
+              </div>
+            </div>
+          </div>
+          <div class="selection7">
+            <div class="title105">Field</div>
+            <div class="chip-group7">
+              <div class="chip27">
+                <div class="text55">Engineering</div>
+              </div>
+              <div class="chip31">
+                <div class="text55">Computer Science</div>
+              </div>
+              <div class="chip27">
+                <div class="text55">Information Systems</div>
+              </div>
+              <div class="chip27">
+                <div class="text55">+</div>
+              </div>
+            </div>
+          </div>
+          <div class="input21">
+            <div class="textfield28">
+              <div class="text62">Job Details...</div>
+            </div>
+          </div>
+          <div class="input22">
+            <div class="textfield29">
+              <div class="text62">Job Benefits...</div>
+            </div>
+          </div>
+        </div>
+        <img class="section-child15" alt="" src="./public/vector-200.svg" />
+      </div>
+      <div class="foot-bar8">
+        <div class="container30">
+          <div class="title107">© 2024 CAREERNET</div>
+          <div class="title108">Terms & Condition</div>
+          <div class="title109">Privacy & Policy</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var titleText = document.getElementById("titleText");
+      if (titleText) {
+        titleText.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      }
+      
+      var tabText = document.getElementById("tabText");
+      if (tabText) {
+        tabText.addEventListener("click", function (e) {
+          window.location.href = "./job-find.html";
+        });
+      }
+      
+      var tabText1 = document.getElementById("tabText1");
+      if (tabText1) {
+        tabText1.addEventListener("click", function (e) {
+          window.location.href = "./community.html";
+        });
+      }
+      
+      var tabText2 = document.getElementById("tabText2");
+      if (tabText2) {
+        tabText2.addEventListener("click", function (e) {
+          window.location.href = "./event-find.html";
+        });
+      }
+      
+      var basicUser = document.getElementById("basicUser");
+      if (basicUser) {
+        basicUser.addEventListener("click", function (e) {
+          window.location.href = "./acc.html";
+        });
+      }
+      
+      var itemContainer = document.getElementById("itemContainer");
+      if (itemContainer) {
+        itemContainer.addEventListener("click", function (e) {
+          window.location.href = "./job-find.html";
+        });
+      }
+      </script>
+  </body>
+</html>

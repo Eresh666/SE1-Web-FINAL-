@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./chat.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Axiforma:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="chat">
+      <div class="top-bar5">
+        <b class="title63" id="titleText">CAREERNET</b>
+        <div class="navigation4">
+          <div class="tab12" id="tabText">Job Offers</div>
+          <div class="tab12" id="tabText1">Community</div>
+          <div class="tab12" id="tabText2">Events</div>
+          <div class="textfield13">
+            <div class="text40">Search in site</div>
+            <img class="ic-search-icon4" alt="" src="./public/icsearch.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="section11">
+        <div class="container16">
+          <b class="title64">Chatbot AI</b>
+
+          <div id= "massage-container">
+            <div class="massage-top-space">
+
+            </div>
+          </div>
+
+          <form onsubmit="SubmitPrompt(event)" class="input9">
+            <input id="prompt-input" placeholder="Ask Anything..."/>
+            <div class="textfield14">
+              
+              <input
+              type="image"
+                class="basic-send"
+                alt=""
+                src="./public/24--basic--send@2x.png"
+                onclick=""
+              />
+            </div>
+          </form>
+
+        </div>
+      </div>
+      <div class="foot-bar5">
+        <div class="container17">
+          <div class="title65">© 2024 CAREERNET</div>
+          <div class="title66">Terms & Condition</div>
+          <div class="title67">Privacy & Policy</div>
+        </div>
+        <img class="foot-bar-item" alt="" src="./public/vector-2002.svg" />
+      </div>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+      }
+    </script>
+
+    <script type="module">
+    
+    import { GoogleGenerativeAI } from "@google/generative-ai";
+    
+    // Fetch your API_KEY
+    const API_KEY = "AIzaSyCFGQXvUo9g55vxpXbzIhNy1kEzSNs6_wk";
+      
+    // Access your API key (see "Set up your API key" above)
+    const genAI = new GoogleGenerativeAI(API_KEY);
+    
+    // The Gemini 1.5 models are versatile and work with most use cases
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
+    const chat = model.startChat()
+      window.AIchatbot = chat
+    </script>
+
+    <script>
+    
+    function SubmitPrompt(e){
+      e.preventDefault()
+      const promptElement = document.getElementById("prompt-input")
+      const prompt = promptElement.value 
+      promptElement.value = ""
+      console.log(prompt)
+      CreateMassage("me",prompt)
+      getAIResponse(prompt)
+    }
+    
+    async function getAIResponse(prompt){
+      const result = await window.AIchatbot.sendMessage(prompt);
+      const response = await result.response;
+      const text = response.text();
+      CreateMassage("AI Chatbot", text)
+    }
+
+    function CreateMassage(sender,body){
+      const massage = document.createElement("div")
+      massage.className = "massage"
+      const senderContainer = document.createElement("div")
+      senderContainer.className = "massage-sender"
+      senderContainer.innerText = sender
+      const bodyContainer = document.createElement("p")
+      bodyContainer.innerText = body
+      massage.appendChild(senderContainer)
+      massage.appendChild(bodyContainer)
+      document.getElementById("massage-container").appendChild(massage)
+    }
+
+    </script>
+
+    <script>
+
+      var titleText = document.getElementById("titleText");
+      if (titleText) {
+        titleText.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      }
+      
+      var tabText = document.getElementById("tabText");
+      if (tabText) {
+        tabText.addEventListener("click", function (e) {
+          window.location.href = "./job-find.html";
+        });
+      }
+      
+      var tabText1 = document.getElementById("tabText1");
+      if (tabText1) {
+        tabText1.addEventListener("click", function (e) {
+          window.location.href = "./community.html";
+        });
+      }
+      
+      var tabText2 = document.getElementById("tabText2");
+      if (tabText2) {
+        tabText2.addEventListener("click", function (e) {
+          window.location.href = "./event-find.html";
+        });
+      }
+      </script>
+  </body>
+</html>
